@@ -1,7 +1,7 @@
 import tornado.ioloop
 import tornado.web
 import sys
-import request
+import requests
 
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
