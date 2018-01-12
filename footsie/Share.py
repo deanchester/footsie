@@ -10,4 +10,4 @@ class Share:
     def get_rss_item(self, fe):
         fe.title(self.name)
         fe.id(self.code)
-        fe.content(self.code + ',' + self.name + ',' + self.current.encode('utf-8') + ',' + self.price.encode('utf-8') + ',' + self.diff.encode('utf-8') + ',' + self.per_diff.encode('utf-8'))
+        fe.content(self.code + ',' + self.name + ',' + self.current + ',' + self.price + ',' + self.diff + ',' + self.per_diff)
