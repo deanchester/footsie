@@ -7,7 +7,7 @@ class MainHandler(tornado.web.RequestHandler):
     def get(self):
         # self.write("Hello, world")
         page = requests.get('http://www.londonstockexchange.com/exchange/prices-and-markets/stocks/indices/constituents-indices.html?index=UKX&industrySector=&page=1')
-        print(page.contents)
+        print(page.content)
         
 
 def make_app():
