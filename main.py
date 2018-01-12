@@ -18,7 +18,6 @@ class MainHandler(tornado.web.RequestHandler):
         p6 = Scrapper.ScrapeWebSite('http://www.londonstockexchange.com/exchange/prices-and-markets/stocks/indices/constituents-indices.html?index=UKX&industrySector=&page=6')
         
         shares= p1 + p2 + p3 + p4 + p5 + p6
-        print(len(shares))
         fg = FeedGenerator()
         fg.title("Footsie Shares")
         fg.link(href='http://localhost:5000',  rel='alternate')
